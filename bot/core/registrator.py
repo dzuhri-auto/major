@@ -9,8 +9,12 @@ async def register_query_id() -> None:
     if not query_id_str:
         return None
 
-    with open("query_ids.txt", "a") as fd:
-        fd.write(f"\n{query_id_str}")
+    with open("query_ids.txt", "r+") as fd:
+        content = fd.readlines()
+        if content:
+            fd.write(f"\n{query_id_str}")
+        else:
+            fd.write(f"{query_id_str.strip()}")
 
     tele_user_obj = get_tele_user_obj_from_query_id(query_id_str)
     username = tele_user_obj.get("username")
