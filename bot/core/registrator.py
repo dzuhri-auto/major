@@ -30,7 +30,7 @@ async def register_query_id() -> None:
                 if username in set(existing_username):
                     username_exist = True
                 else:
-                    fd.write(f"\n{query_id_str}")
+                    fd.write(f"\n{query_id_str.strip()}")
             else:
                 fd.write(f"{query_id_str.strip()}")
 
