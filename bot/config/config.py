@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     API_KEY: str
 
     POINTS: list[int] = [500, 800]
+    SWIPE_POINTS: list[int] = [950, 1100]
 
     USE_REF: bool = False
     REF_ID: str = ""
