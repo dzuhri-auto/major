@@ -1,4 +1,12 @@
 @echo off
+echo Update bot..
 
-python main.py
+git stash
+git pull
+git stash pop
+
+echo Done update bot..
+echo Starting bot, please wait..
+
+python3 main.py
 pause

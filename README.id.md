@@ -2,7 +2,7 @@
 
 MAJOR Telegram Mini App Bot
 
-For README in Bahasa Indonesia: [![en](https://img.shields.io/badge/README-id-red.svg)](https://github.com/dzuhri-auto/major/blob/master/README.id.md)
+For README in English: [![en](https://img.shields.io/badge/README-en-red.svg)](https://github.com/dzuhri-auto/major/blob/master/README.md)
 
 ## Feature
 
@@ -21,37 +21,37 @@ For README in Bahasa Indonesia: [![en](https://img.shields.io/badge/README-id-re
 | REF_ID              | Referral code                       | ""           |
 | USE_PROXY_FROM_FILE | For using proxy                     | False        |
 
-## Prerequisites
+## Persiapan
 
-Make sure you already install:
+Pastikan kamu sudah menginstal:
 
-- [Python](https://www.python.org/downloads/release/python-31014/) **version 3.10**
+- [Python](https://www.python.org/downloads/release/python-31014/) **versi 3.10**
 
-## How to obtain Query ID
+## Mendapatkan Query ID
 
 <https://irhamdz.notion.site/Tutorial-Get-Query-ID-f415621d4a9843d2a7a9ad2cfb9abeb4?pvs=74>
 
-## Request API KEY
+## Mendapatkan API KEY
 
-This script use custom API KEY, The API KEY itself is for rent only
+Script ini menggunakan kustom API KEY, API KEY nya hanya tersedia untuk disewa.
 
-you can chat me, [Irham](https://t.me/irhamdz) to ask how much the rent price !
+Kamu bisa chat saya, [Irham](https://t.me/irhamdz) untuk menanyakan harga sewanya!
 
 ## Install
 
-Clone to your PC / VPS:
+Clone ke PC / VPS kamu:
 
 ```shell
 git clone https://github.com/dzuhri-auto/major.git
 ```
 
-Go inside to the folder:
+Masuk ke folder:
 
 ```shell
 cd major
 ```
 
-Then use this command for automatic install:
+Kemudian gunakan perintah ini untuk instal otomatis:
 
 **Windows** :
 
@@ -69,11 +69,11 @@ sudo chmod +x ubuntu/install.sh ubuntu/run.sh
 source ./ubuntu/install.sh
 ```
 
-***note : dont forget to edit file `.env`***
+***note : Jangan lupa untuk mengedit file `.env`***
 
 ## Update API KEY
 
-After install we can update using API KEY:
+Setelah instalasi, kita bisa memperbarui menggunakan API KEY:
 
 **Windows** :
 
@@ -90,13 +90,13 @@ $replacement = 'API_KEY="YOUR API KEY"'
 ```shell
 sed -i~ '/^API_KEY=/s/=.*/="YOUR API KEY"/' .env
 
-# example if your API KEY = "aisjiqiqssq"
+# contoh jika API KEY kamu = "aisjiqiqssq"
 # sed -i~ '/^API_KEY=/s/=.*/="aisjiqiqssq"/' .env
 ```
 
-## Start Bot
+## Menjalankan Bot
 
-For run the bot:
+Untuk menjalankan bot:
 
 **Windows** :
 
