@@ -11,8 +11,18 @@ class CustomClientResponseError(ClientResponseError):
             self.message,
         )
 
-class InvalidApiKey(BaseException):
+
+class MissingLicenseKeyException(BaseException):
     pass
 
-class ExpiredApiKey(BaseException):
+
+class InvalidLicenseKeyException(BaseException):
+    pass
+
+
+class ExpiredLicenseKeyException(BaseException):
+    pass
+
+
+class APIErrorException(BaseException):
     pass

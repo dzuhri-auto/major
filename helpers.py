@@ -88,3 +88,23 @@ def get_tele_user_obj_from_query_id(query_id):
     query_obj = decode_query_id(query_id)
     tele_user_obj = query_obj.get("user", {})
     return tele_user_obj
+
+class bcolors:
+    HEADER = "\033[95m"
+    OKBLUE = "\033[94m"
+    OKCYAN = "\033[96m"
+    OKGREEN = "\033[92m"
+    WARNING = "\033[93m"
+    FAIL = "\033[91m"
+    ENDC = "\033[0m"
+    BOLD = "\033[1m"
+    UNDERLINE = "\033[4m"
+
+
+def format_large_number(number):
+    if number >= 1_000_000_000:  # Check if the number is in billions
+        return f"{number / 1_000_000_000:.2f}B"
+    elif number >= 1_000_000:  # Check if the number is in millions
+        return f"{number / 1_000_000:.2f}M"
+    else:
+        return str(number)

@@ -1,0 +1,1 @@
+puzzle_answers= ({"choice_1": 14, "choice_2": 5, "choice_3": 6, "choice_4": 7})
